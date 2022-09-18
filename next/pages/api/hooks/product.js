@@ -17,7 +17,7 @@ const handler = async (req, res) => {
     console.log('slug:', slug);
     res.status(200).json({ msg: 'Product pages revalidated.' });
   } catch (error) {
-    res.status(200).json({ err: 'Something went Wrong!' });
+    res.status(500).json({ err: 'Something went Wrong!' });
   }
 };
 
