@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Product = ({ product }) => {
   return (
     <div>
-      <p>{product.title}</p>
+      <p>{product && product.title}</p>
     </div>
   );
 };
